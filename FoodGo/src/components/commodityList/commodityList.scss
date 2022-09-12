@@ -1,0 +1,133 @@
+@import "variable/variable.scss";
+
+// ------------------------------------------- 網頁版 s -------------------------------------------
+.ru-item-container {
+  padding-top: 90px;
+  background-image: url("./Images/background.png");
+  background-size: 100%;
+}
+
+.ru-card-warp {
+  @include xl();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ru-itemWarp {
+  // background-color: cornflowerblue;
+  width: 100%;
+  @include flex($df, $fdr, flex-start, $als);
+  flex-wrap: wrap;
+}
+
+.commdityList-productCard {
+  width: 33.3%;
+  padding: 0px 10px;
+  margin-bottom: 80px;
+}
+// ------------------------------------------- 網頁版 e -------------------------------------------
+
+//  ------------------------------------------- ipad pro版 s -------------------------------------------
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  //   // ******** 便當 / 沙拉 s ********
+
+  .ru-item-container {
+    background-size: 150%;
+  }
+
+  .ru-card-warp {
+    // background-color: gold;
+    @include lg();
+    width: 100%;
+  }
+
+  .ru-itemWarp {
+    // background-color: cornflowerblue;
+    @include flex($df, $fdr, space-around, $als);
+  }
+
+  .commdityList-productCard {
+    width: 33.3%;
+    padding: 0px 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  //   //   // ******** 便當 / 沙拉 s ********
+
+  .ru-item-container {
+    background-size: 250%;
+  }
+
+  .ru-card-warp {
+    // background-color: gold;
+    @include md();
+    padding: 0px 30px;
+    width: 100%;
+  }
+
+  .ru-itemWarp {
+    // background-color: cornflowerblue;
+    @include flex($df, $fdr, space-around, $als);
+  }
+
+  .commdityList-productCard {
+    width: 50%;
+    padding: 0px 10px;
+  }
+}
+//  ------------------------------------------- ipad pro版 e -------------------------------------------
+
+//  ------------------------------------------- ipad 版 s -------------------------------------------
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+  .ru-item-container {
+    background-size: 300%;
+  }
+
+  .ru-card-warp {
+    // background-color: gold;
+    @include sm();
+    padding: 0px 40px;
+    width: 100%;
+  }
+
+  .ru-itemWarp {
+    // background-color: cornflowerblue;
+    @include flex($df, $fdr, space-around, $als);
+  }
+
+  .commdityList-productCard {
+    width: 100%;
+    padding: 0px 50px;
+  }
+}
+//  ------------------------------------------- ipad 版 e -------------------------------------------
+
+//  ------------------------------------------- 手機 版 s -------------------------------------------
+@media screen and (max-width: 575.99px) {
+  // ******** 便當 / 沙拉 s ********
+
+  .ru-item-container {
+    background-size: 400%;
+  }
+
+  .ru-card-warp {
+    // background-color: gold;
+    @include xs();
+    height: 100%;
+    width: 100%;
+  }
+
+  .ru-itemWarp {
+    // background-color: cornflowerblue;
+    height: 100%;
+    @include flex($df, $fdc, space-between, $als);
+  }
+
+  .commdityList-productCard {
+    width: 100%;
+    padding: 0px 40px;
+  }
+}
+//  ------------------------------------------- 手機 版 e -------------------------------------------

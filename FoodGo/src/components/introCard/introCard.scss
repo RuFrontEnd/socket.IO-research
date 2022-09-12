@@ -1,0 +1,123 @@
+$gray: #858585;
+$lightGray: #fafafa;
+$brown: #a59583;
+$lightBrown: #decdbb;
+$skin: #f7ede2;
+$green: #66ab8c;
+$deepGreen: #438b6b;
+$orange: #f48145;
+$deepOrange: #e0611e;
+$yellow: #f6bd60;
+$deepYellow: #f5a016;
+
+@import "variable/variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+
+// 特色內容
+#introCard-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#introCard-wrap {
+  background-color: $lightGray;
+  width: 26rem;
+  height: 45rem;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0.1rem 0.2rem 0.5rem 0.1rem #c2c2c279;
+  position: relative;
+  overflow: hidden;
+}
+
+#introCard-photo-fake {
+  width: 15rem;
+  height: 15rem;
+}
+
+#introCard-wrap:hover > #introCard-photo {
+  object-fit: cover;
+  border-radius: 0%;
+  opacity: 0.25;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
+
+#introCard-photo {
+  position: absolute;
+  z-index: 100;
+  top: calc(0% + 20px);
+  left: calc(50% - 7.5rem);
+  background-color: #f48145;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto 20px;
+  transition: 0.5s;
+}
+
+#introCard-content {
+  position: relative;
+  z-index: 1050;
+}
+
+#introCard-title {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#introCard-text {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 auto 30px 0;
+}
+
+#introCard-btn{
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  z-index: 1080;
+}
+
+#introCard-arrow {
+  background: url("../../assets/svg/intro1-arrow.svg") center center no-repeat;
+  background-size: cover;
+  width: 3rem;
+  height: 2.2rem;
+  cursor: pointer;
+  float: right;
+}
+
+#introCard-wrap:hover > #introCard-arrow {
+  animation: myCustomAnimate 0.7s infinite;
+}
+
+@keyframes myCustomAnimate {
+  from {
+    margin-right: 3rem;
+  }
+  to {
+    margin-right: 0rem;
+  }
+}
+
+#introCard-viewMore {
+  font-family: "Noto Sans TC", sans-serif;
+  color: $gray;
+  font-size: 1rem;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  float: right;
+}

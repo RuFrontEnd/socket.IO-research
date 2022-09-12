@@ -1,0 +1,209 @@
+// $primary: #438B6B;
+// 
+
+// 背景圖片wrapper
+.loginCard-background-container {
+  position: relative;
+}
+
+// 表單
+.login-form {
+  position: absolute;
+  left: 45%;
+  padding: 50px 50px;
+  background-color: #fff;
+  border-radius: 2rem;
+  transform: translate(-90%, 0);
+  display: flex;
+}
+
+// ----------------------------- login start
+// 綠色背景圖片
+.loginCard-background-wrap {
+  display: block;
+  opacity: 1;
+}
+.login-content {
+  display: flex;
+}
+
+.login-alert {
+  width: 55%;
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.login-title {
+  color: #438b6b;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.login-form .login-text {
+  color: #858585;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.login-text button:hover {
+  $primary: #438b6b;
+}
+
+// 記住我,忘記密碼的wrapper
+.login-other {
+  width: 100%;
+  justify-content: center;
+  color: #858585;
+  font-size: 1.7rem;
+  margin-top: 20px;
+}
+
+// 忘記密碼
+.login-forget-pw {
+  border-bottom: 1px solid #858585;
+}
+
+.login-forget-pw:hover {
+  cursor: pointer;
+}
+
+.form-check {
+  margin-right: 5rem;
+}
+
+// 記住我
+.login-remember-me {
+  margin-left: 2.8rem;
+  padding-top: 0.3rem;
+}
+
+// 改checkbox大小
+.big-checkbox {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.login-button {
+  width: 12rem;
+  height: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.no-account {
+  color: #a59583;
+  font-size: 2rem;
+}
+
+.no-account-register {
+  color: #438b6b;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.no-account-register:hover {
+  cursor: pointer;
+}
+
+.loginCard-input {
+  margin: 10px 30px;
+}
+
+.form-content {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// ------------------------------ login end
+
+// -------------------------------register start
+.register-background-wrap {
+  display: none;
+  opacity: 0;
+}
+
+.register-content {
+  display: none;
+}
+
+.register-title {
+  color: #a59583;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.login-now {
+  color: #f48145;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.login-now:hover {
+  cursor: pointer;
+}
+
+.register-button {
+  width: 12rem;
+  height: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+// 註冊表單提示
+.wrong-account-format {
+  color: red;
+  margin-left: -9.5rem;
+  display: none;
+}
+
+.wrong-password-format {
+  color: red;
+  margin-left: -9.5rem;
+  display: none;
+}
+
+.wrong-confirmPassword-format {
+  color: red;
+  margin-left: -9.5rem;
+  display: none;
+}
+
+.wrong-email-format {
+  color: red;
+  margin-left: -5rem;
+  display: none;
+}
+
+.wrong-mobile-format {
+  color: red;
+  margin-left: -5rem;
+  display: none;
+}
+
+.register-alert {
+  // width: 55%;
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+  display: block;
+}
+
+.register-alert {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+}
+
+.logCard-register-alert-active {
+  height: 42px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.logCard-register-alert-inactive {
+  height: 0px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
